@@ -102,6 +102,7 @@ def image_Analyze():
                                                     circularity_start=tarImage.circularity_start, circularity_end=tarImage.circularity_end,
                                                     savename=tarImage.savename, savelocation=tarImage.savelocation)
 
+                print(macro_script)
                 global pyimageJ_Result
                 pyimageJ_Result = pyimageJ.py.run_macro(macro_script)
                 excel_generate(tarImage.savelocation, tarImage.savename)

@@ -15,8 +15,12 @@ def capture_Filename(fileLocation):
             match.group()
             return match[1]
         else:
-            print("error")
-            return 1
+            match = re.match(r'(^.*)\.jpg', fileLocation[len(fileLocation) - 1])
+            if match is not None:
+                match.group()
+                return match[1]
+            else:
+                return 1
 
 
 def SaveAs(order, savelocation="", savename=""):
