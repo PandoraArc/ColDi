@@ -1,4 +1,4 @@
-<img src="https://github.com/PandoraArc/ColDi/blob/main/ColDi_logo.png" width="150">
+<img src="https://github.com/PandoraArc/ColDi/blob/main/ColDi/ColDi_logo.png" width="150">
 
 # ColDi
 A fast way to measure bacterial colony diameter by imageJ
@@ -21,6 +21,9 @@ The first step when using ColDi is to activate pyimageJ enviroment by using comm
 
 ```
 conda activate pyimagej
+
+#or in case the enviroment is imported from ColDi.yml
+conda activate pyimageJ_ColDi
 ```
 
 then go to the ColDi directory and and run the main.py
