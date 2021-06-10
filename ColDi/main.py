@@ -45,8 +45,9 @@ def program_initialize():
 
 
 def get_Filename_Fileloacation():
-    tarImage.filelocation = filedialog.askopenfilename(initialdir="/", title="Select a File", filetypes=(("PNG file", "*.png"), ("JPEG file",
-                                                                                                                                 "*.jpeg")))
+    tarImage.filelocation = filedialog.askopenfilename(initialdir="/", title="Select a File", filetypes=(("PNG file", "*.png"),
+                                                                                                         ("JPEG file", "*.jpeg"),
+                                                                                                         ("JPG file", "*.jpg")))
     fileLocation_result.configure(text=tarImage.filelocation)
     tarImage.filename = ColDi.capture_Filename(tarImage.filelocation)
     savenameFileinfo_entry.delete(0, tk.END)
