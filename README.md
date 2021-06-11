@@ -8,9 +8,7 @@ The python project provides a wrapper functions for analyzing bacterial colony d
 
 ## Installation
 ColDi can be run in pyimageJ environment. In order to install the environment, please fellow the link https://github.com/imagej/pyimage.
-ColDi also require additional python library including pandas, numpy, matplotlib.pyplot.
-
-Alternatively, the environment used compatibly with ColDi is also provided. you can import environment by using conda command
+ColDi also require additional python library including pandas, numpy, matplotlib.
 
 ```
 conda env create -n pyimageJ_ColDi -f ColDi.yml
@@ -21,9 +19,6 @@ The first step when using ColDi is to activate pyimageJ environment by using com
 
 ```
 conda activate pyimagej
-
-# or in case the environment is imported from ColDi.yml
-conda activate pyimageJ_ColDi
 ```
 
 then go to the ColDi directory and and run the main.py
