@@ -33,4 +33,6 @@ the result of your input will be save in save location as .csv and .xlsx file. T
 
 ## Example input and result
 
-For example input image and result from ColDI can be found in folder Example
+For example input image and result from ColDI can be found in folder Example. Video reccording for instruction can be found in the youtube link below.
+
+[![YouTube](https://img.shields.io/static/v1.svg?logo=youtube&label=YouTube&message=click%20here&color=red)](https://youtu.be/fK7d56Ly9q8)
