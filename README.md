@@ -35,4 +35,4 @@ the result of your input will be save in save location as .csv and .xlsx file. T
 
 For example input image and result from ColDI can be found in folder Example. Video reccording for instruction can be found in the youtube link below.
 
-[![YouTube](https://img.shields.io/static/v1.svg?logo=youtube&label=YouTube&message=click%20here&color=red)](https://youtu.be/fK7d56Ly9q8)
+[![YouTube](https://img.shields.io/static/v1.svg?logo=youtube&label=YouTube&message=click%20here&color=red)](https://www.youtube.com/watch?v=cgYBiOsy77g&t=2s)
