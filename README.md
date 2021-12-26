@@ -7,7 +7,7 @@ A fast way to measure bacterial colony diameter by imageJ
 The python project provides a wrapper functions for analyzing bacterial colony diameter using pyimagej with a simple graphical user interface.
 
 ## Installation
-ColDi can be run in pyimageJ environment. In order to install the environment, please fellow the link https://github.com/imagej/pyimage.
+ColDi can be run in pyimageJ environment. In order to install the environment, please fellow the link https://github.com/imagej/pyimagej.
 ColDi also require additional python library including pandas, numpy, matplotlib.
 
 
