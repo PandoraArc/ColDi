@@ -75,7 +75,8 @@ def image_Analyze():
             tarImage.pixelrefObj = str(pixelrefObj_entry.get()).strip()
             tarImage.cropZoneX = str(cropXParameter_entry.get()).strip()
             tarImage.cropZoneY = str(cropYParameter_entry.get()).strip()
-            tarImage.cropZoneHW = str(cropHWParameter_entry.get()).strip()
+            tarImage.cropZoneH = str(cropHParameter_entry.get()).strip()
+            tarImage.cropZoneW = str(cropWParameter_entry.get()).strip()
             tarImage.threshold_front = str(thresholdParameter_entry_front.get()).strip()
             tarImage.threshold_back = str(thresholdParameter_entry_back.get()).strip()
             tarImage.circularity_start = str(circularityParameter_entry_start.get()).strip()
@@ -95,9 +96,9 @@ def image_Analyze():
 
             if Run_macro_state:
 
-                macro_script = ColDi.macro_generate(filelocation=tarImage.filelocation, pixelrefObj=tarImage.pixelrefObj, refObj=tarImage.refObj,
-                                                    cropZoneX=tarImage.cropZoneX, cropZoneY=tarImage.cropZoneY, cropZoneHW=tarImage.cropZoneHW,
-                                                    threshold_front=tarImage.threshold_front, theshold_back=tarImage.threshold_back,
+                macro_script = ColDi.macro_generate_half_plate(filelocation=tarImage.filelocation, pixelrefObj=tarImage.pixelrefObj, refObj=tarImage.refObj,
+                                                    cropZoneX=tarImage.cropZoneX, cropZoneY=tarImage.cropZoneY, cropZoneH=tarImage.cropZoneH,
+                                                    cropZoneW=tarImage.cropZoneW, threshold_front=tarImage.threshold_front, theshold_back=tarImage.threshold_back,
                                                     size_start=tarImage.size_start, size_end=tarImage.size_end,
                                                     circularity_start=tarImage.circularity_start, circularity_end=tarImage.circularity_end,
                                                     savename=tarImage.savename, savelocation=tarImage.savelocation)
@@ -170,7 +171,7 @@ def clear_data():
 
 
 root_Gui = tk.Tk()
-root_Gui.title("ColDi")
+root_Gui.title("ColDi-Square")
 root_Gui.geometry("500x700")
 icon = tk.PhotoImage(file="ColDi_logo.png")
 root_Gui.iconphoto(False, icon)
@@ -232,9 +233,12 @@ cropXParameter_entry.grid(column=1, row=3)
 cropYParameter_lable = tk.Label(parameters_Frame, text="Y:").grid(column=0, row=4, sticky="W", padx=5)
 cropYParameter_entry = tk.Entry(parameters_Frame, width=10)
 cropYParameter_entry.grid(column=1, row=4)
-cropHWParameter_lable = tk.Label(parameters_Frame, text="Hight and width(H/W)").grid(column=0, row=5, sticky="W", padx=5)
-cropHWParameter_entry = tk.Entry(parameters_Frame, width=10)
-cropHWParameter_entry.grid(column=1, row=5)
+cropHParameter_lable = tk.Label(parameters_Frame, text="Hight(H)").grid(column=0, row=5, sticky="W", padx=5)
+cropHParameter_entry = tk.Entry(parameters_Frame, width=10)
+cropHParameter_entry.grid(column=1, row=5)
+cropWParameter_lable = tk.Label(parameters_Frame, text="Width(W)").grid(column=0, row=6, sticky="W", padx=5)
+cropWParameter_entry = tk.Entry(parameters_Frame, width=10)
+cropWParameter_entry.grid(column=1, row=6)
 
 # Threshold
 space = tk.Label(parameters_Frame).grid(column=0, row=6, columnspan=True)

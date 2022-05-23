@@ -1,7 +1,7 @@
 class targetimage:
 
     def __init__(self, filename="", savename="", filelocation="", savelocation="", refObj="", pixelrefObj="",
-                 cropZoneX="", cropZoneY="", cropZoneHW="", circularity_start="0.5", circularity_end="1", size_start="0.5", size_end="Infinity",
+                 cropZoneX="", cropZoneY="", cropZoneH="", cropZoneW="", circularity_start="0.5", circularity_end="1", size_start="0.5", size_end="Infinity",
                  threshold_front="188", threshold_back="255", average=0, median=0) -> object:
 
         self.filename = filename
@@ -12,7 +12,8 @@ class targetimage:
         self.pixelrefObj = pixelrefObj
         self.cropZoneX = cropZoneX
         self.cropZoneY = cropZoneY
-        self.cropZoneHW = cropZoneHW
+        self.cropZoneH = cropZoneH
+        self.cropZoneW = cropZoneW
         self.circularity_start = circularity_start
         self.circularity_end = circularity_end
         self.size_start = size_start
