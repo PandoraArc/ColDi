@@ -84,7 +84,7 @@ def image_Analyze():
             tarImage.size_start = str(sizePrameter_entry_start.get()).strip()
             tarImage.size_end = str(sizePrameter_entry_end.get()).strip()
             list_all_parameters = [tarImage.savename, tarImage.refObj, tarImage.pixelrefObj, tarImage.cropZoneX, tarImage.cropZoneY,
-                                   tarImage.cropZoneHW, tarImage.threshold_front, tarImage.threshold_back, tarImage.circularity_start,
+                                   tarImage.cropZoneH, tarImage.cropZoneW,tarImage.threshold_front, tarImage.threshold_back, tarImage.circularity_start,
                                    tarImage.circularity_end, tarImage.size_start, tarImage.size_end]
             for parameter in list_all_parameters:
                 if parameter == "":
