@@ -53,7 +53,7 @@ def macro_generate_half_plate(filelocation, pixelrefObj, refObj, cropZoneX, crop
                    circularity_start, circularity_end, savelocation, savename):
     openfile = 'open(' + '"' + filelocation + '");\n'
     set_scale = 'run("Set Scale...", "distance=' + pixelrefObj + ' known=' + refObj + ' pixel=1 unit=mm");\n'
-    make_rectangle = 'makeRectangle(' + cropZoneX + ',' + cropZoneY + ',' + cropZoneH + ',' + cropZoneW + ');\n'
+    make_rectangle = 'makeRectangle(' + cropZoneX + ',' + cropZoneY + ',' + cropZoneW + ',' + cropZoneH + ');\n'
     crop = 'run("Crop");\n'
     bit = 'run("8-bit");\n'
     cut_filter = 'run("Bandpass Filter...", "filter_large=40 filter_small=3 suppress=None tolerance=5 autoscale saturate");\n'
