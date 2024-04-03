@@ -127,7 +127,7 @@ def excel_generate(savelocation, savename):
     xlsx_path = savelocation + '/' + savename + "-5.xlsx"
     writer = pd.ExcelWriter(xlsx_path, engine='xlsxwriter')
     Final_excel_df.to_excel(writer, sheet_name='Sheet1')
-    writer.save()
+    writer.close()
     global pyimageJ_Diameter
     pyimageJ_Diameter = Final_excel_df['Diameter']
     # histogram = Final_excel_df.hist(column=""Diameter")
